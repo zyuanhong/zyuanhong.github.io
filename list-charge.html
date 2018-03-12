@@ -26,7 +26,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
-<body>
+<body id="top">
 
     <nav class="pushy pushy-right bg-white">
         <!-- module: nav-mobile -->
@@ -34,9 +34,13 @@
         <!-- module: ./nav-mobile -->
     </nav>
 
-    <!-- module: global-header -->
-    <div id="global-header"></div>
-    <!-- ./module: global-header -->
+    <div class="site-overlay"></div>
+
+    <header id="header" class="sticky-top bg-white border-bottom push">
+        <!-- module: global-header -->
+        <div id="global-header"></div>
+        <!-- ./module: global-header -->
+    </header>
 
     <div id="kv" class="push">
         <div class="slider-kv">
@@ -51,181 +55,494 @@
 
     <div id="main" class="push py-10">
         <div class="container">
-            <div class="mb-10 text-center">
-                <div class="h1 text-black font-weight-bold">Apple</div>
-            </div>
 
-            <!-- Tab -->
-            <div class="mb-8">
-                <!-- module: list-tab -->
-                <div id="list-tab"></div>
-                <!-- module: ./list-tab -->
-            </div>
-
-            <!-- 熱門商品 -->
-            <div class="mb-8">
-                <!-- module: list-hot -->
-                <div id="list-hot"></div>
-                <!-- module: ./list-hot -->
-            </div>
-
-            <!-- 周邊配件 -->
-            <div class="mb-8">
-                <!-- module: list-acc -->
-                <div id="list-acc"></div>
-                <!-- module: ./list-acc -->
-            </div>
-
-            <!-- 商品列表 -->
+            <!-- 資費最推薦 -->
             <div class="mb-8">
                 <div class="title mb-2 text-center text-black">
-                    <div class="h5 font-weight-bold title-line"><span>商品列表</span></div>
+                    <div class="h5 font-weight-bold title-line"><span>資費最推薦</span></div>
                 </div>
-                <div class="row">
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            小米 紅米5
+                <ul class="nav nav-tabs flex-column flex-sm-row" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link lead active" id="tab-nav1" data-toggle="tab" href="#tab-content1">中華電信</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" id="tab-nav2" data-toggle="tab" href="#tab-content2">遠傳電信</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" id="tab-nav3" data-toggle="tab" href="#tab-content3">台灣大哥大</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" id="tab-nav4" data-toggle="tab" href="#tab-content4">台灣之星</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lead" id="tab-nav5" data-toggle="tab" href="#tab-content5">亞太電信</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade pt-2 show active" id="tab-content1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 my-2">
+                                <div class="border border-gray-6 box-select">
+                                        <div class="row no-gutters">
+                                            <div class="col-12 py-1 box-price box-price-month bg-primary">
+                                                <div class="px-4 text-white text-center d-block">
+                                                    月繳 <span class="h4 font-weight-bold">$699</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr class="mt-0">
+                                                <div class="text-center">約期：30個月　預繳：4,500</div>
+                                                <hr>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                                    <ul class="media-body m-0 text-warning">
+                                                        <li>上網吃到飽</li>
+                                                        <li>網內一門熱線免費</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-phone"></i>
+                                                    <ul class="media-body m-0">
+                                                        <li>網內45分鐘</li>
+                                                        <li>網外40分鐘</li>
+                                                        <li>市話15分鐘</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 my-2">
+                                <div class="border border-gray-6 box-select">
+                                        <div class="row no-gutters">
+                                            <div class="col-12 py-1 box-price box-price-month bg-primary">
+                                                <div class="px-4 text-white text-center d-block">
+                                                    月繳 <span class="h4 font-weight-bold">$699</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr class="mt-0">
+                                                <div class="text-center">約期：30個月　預繳：4,500</div>
+                                                <hr>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                                    <ul class="media-body m-0 text-warning">
+                                                        <li>上網吃到飽</li>
+                                                        <li>網內一門熱線免費</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-phone"></i>
+                                                    <ul class="media-body m-0">
+                                                        <li>網內45分鐘</li>
+                                                        <li>網外40分鐘</li>
+                                                        <li>市話15分鐘</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 my-2">
+                                <div class="border border-gray-6 box-select">
+                                        <div class="row no-gutters">
+                                            <div class="col-12 py-1 box-price box-price-month bg-primary">
+                                                <div class="px-4 text-white text-center d-block">
+                                                    月繳 <span class="h4 font-weight-bold">$699</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr class="mt-0">
+                                                <div class="text-center">約期：30個月　預繳：4,500</div>
+                                                <hr>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                                    <ul class="media-body m-0 text-warning">
+                                                        <li>上網吃到飽</li>
+                                                        <li>網內一門熱線免費</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-phone"></i>
+                                                    <ul class="media-body m-0">
+                                                        <li>網內45分鐘</li>
+                                                        <li>網外40分鐘</li>
+                                                        <li>市話15分鐘</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3 my-2">
+                                <div class="border border-gray-6 box-select">
+                                        <div class="row no-gutters">
+                                            <div class="col-12 py-1 box-price box-price-month bg-primary">
+                                                <div class="px-4 text-white text-center d-block">
+                                                    月繳 <span class="h4 font-weight-bold">$699</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr class="mt-0">
+                                                <div class="text-center">約期：30個月　預繳：4,500</div>
+                                                <hr>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                                    <ul class="media-body m-0 text-warning">
+                                                        <li>上網吃到飽</li>
+                                                        <li>網內一門熱線免費</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-phone"></i>
+                                                    <ul class="media-body m-0">
+                                                        <li>網內45分鐘</li>
+                                                        <li>網外40分鐘</li>
+                                                        <li>市話15分鐘</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            小米 紅米5
+                    <div class="tab-pane fade pt-2" id="tab-content2" role="tabpanel">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-3 my-2">
+                                <div class="border border-gray-6 box-select">
+                                    <label for="checkbox21">
+                                        <i class="fas fa-check text-white"></i>
+                                        <div class="row no-gutters">
+                                            <div class="col-12 py-1 box-price box-price-month bg-primary">
+                                                <div class="px-4 text-white text-center">
+                                                    月繳 <span class="h4 font-weight-bold">$1299</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <hr class="mt-0">
+                                                <div class="text-center">約期：30個月　預繳：4,500</div>
+                                                <hr>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                                    <ul class="media-body m-0 text-warning">
+                                                        <li>上網吃到飽</li>
+                                                        <li>網內一門熱線免費</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="media my-2 px-4 text-dark">
+                                                    <i class="fas fa-fw fa-2x fa-phone"></i>
+                                                    <ul class="media-body m-0">
+                                                        <li>網內45分鐘</li>
+                                                        <li>網外40分鐘</li>
+                                                        <li>市話15分鐘</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Apple iPhone 8 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
+                    <div class="tab-pane fade pt-2" id="tab-content3" role="tabpanel">
+                        台灣大哥大
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Apple iPhone 8 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
+                    <div class="tab-pane fade pt-2" id="tab-content4" role="tabpanel">
+                        台灣之星
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Apple iPhone 8 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Apple iPhone 8 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
+                    <div class="tab-pane fade pt-2" id="tab-content5" role="tabpanel">
+                        亞太電信
                     </div>
                 </div>
             </div>
 
-            <!-- 新聞 -->
-            <div class="row">
-                <div class="col-12 col-md-4 my-2">
-                    <a class="card bg-dark text-white border-0" href="">
-                        <img class="card-img" src="assets/images/uploads/article-md.jpg" srcset="assets/images/uploads/article-md@2x.jpg 2x" alt="">
-                        <div class="card-img-overlay d-flex p-0">
-                            <div class="align-self-end p-2 pt-4 bg-gradient-dark w-100">
-                                <div class="text-row-2">三星蟬聯智慧型手機龍頭 Q4小米出貨量擠下OPPO</div>
-                            </div>
-                        </div>
-                    </a>
+            <!-- 專案價PK -->
+            <div class="mb-8">
+                <div class="title mb-2 text-center text-black">
+                    <div class="h5 font-weight-bold title-line"><span>專案價PK</span></div>
                 </div>
-                <div class="col-12 col-md-4 my-2">
-                    <a class="card bg-dark text-white border-0" href="">
-                        <img class="card-img" src="assets/images/uploads/article-md.jpg" srcset="assets/images/uploads/article-md@2x.jpg 2x" alt="">
-                        <div class="card-img-overlay d-flex p-0">
-                            <div class="align-self-end p-2 pt-4 bg-gradient-dark w-100">
-                                <div class="text-row-2">旗艦手機指標！高通Snapdragon 845跑分搶先體驗</div>
-                            </div>
-                        </div>
-                    </a>
+                <div class="row no-gutters my-2 title-pk d-none d-md-flex">
+                    <div class="col col-official">
+                        <div class="lead font-weight-bold text-white">手機王購物</div>
+                    </div>
+                    <div class="col col-telecom">
+                        <div class="lead font-weight-bold text-white">電信官方</div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4 my-2">
-                    <a class="card bg-dark text-white border-0" href="">
-                        <img class="card-img" src="assets/images/uploads/article-md.jpg" srcset="assets/images/uploads/article-md@2x.jpg 2x" alt="">
-                        <div class="card-img-overlay d-flex p-0">
-                            <div class="align-self-end p-2 pt-4 bg-gradient-dark w-100">
-                                <div class="text-row-2">標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題</div>
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-2 my-2 text-center px-2">
+                        <img class="img-fluid" src="/assets/images/uploads/prod1_160x120.jpg" srcset="/assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                        <div class="text-black mt-2">ASUS ZenFone Max Plus (M1)</div>
+                    </div>
+                    <div class="col-12 col-md-5 my-2 order-md-first">
+                        <div class="mb-2 d-md-none d-sm-block">
+                            <div class="h5 text-warning font-weight-bold">手機王購物</div>
+                        </div>
+                        <ul class="nav nav-justified border border-bottom-0 bg-light">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab-pk-nav1" data-toggle="tab" href="#tab-pk-content11">最推吃到飽</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-pk-content11" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
+
+                    <div class="col-12 col-md-5 my-2">
+                        <div class="mb-2 d-md-none d-sm-block">
+                            <div class="h5 text-info font-weight-bold">電信官方</div>
+                        </div>
+                        <ul class="nav nav-justified border border-bottom-0 bg-light">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tab-pk-content21">低資費</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-pk-content22">中資費</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-pk-content23">高資費</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-pk-content21" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-pk-content22" role="tabpanel">
+                                中資費表格
+                            </div>
+                            <div class="tab-pane fade" id="tab-pk-content22" role="tabpanel">
+                                高資費表格
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters my-2 title-pk d-none d-md-flex">
+                    <div class="col col-official">
+                        <div class="lead font-weight-bold text-white">手機王購物</div>
+                    </div>
+                    <div class="col col-telecom">
+                        <div class="lead font-weight-bold text-white">電信官方</div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-12 d-md-none d-sm-block"><hr></div>
+                    <div class="col-12 col-md-2 my-2 text-center px-2">
+                        <img class="img-fluid" src="/assets/images/uploads/prod1_160x120.jpg" srcset="/assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                        <div class="text-black mt-2">ASUS ZenFone Max Plus (M1)</div>
+                    </div>
+                    <div class="col-12 col-md-5 my-2 order-md-first">
+                        <div class="mb-2 d-md-none d-sm-block">
+                            <div class="h5 text-warning font-weight-bold">手機王購物</div>
+                        </div>
+                        <ul class="nav nav-justified border border-bottom-0 bg-light">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab-pk-nav1" data-toggle="tab" href="#tab-pk-content11">最推吃到飽</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-pk-content11" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5 my-2">
+                        <div class="mb-2 d-md-none d-sm-block">
+                            <div class="h5 text-info font-weight-bold">電信官方</div>
+                        </div>
+                        <ul class="nav nav-justified border border-bottom-0 bg-light">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tab-pk-content21">低資費</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-pk-content22">中資費</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tab-pk-content23">高資費</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-pk-content21" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中華電信</td>
+                                                <td>月繳699</td>
+                                                <td>$34,500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tab-pk-content22" role="tabpanel">
+                                中資費表格
+                            </div>
+                            <div class="tab-pane fade" id="tab-pk-content22" role="tabpanel">
+                                高資費表格
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- QA -->
+            <div class="mb-8">
+                <div class="title mb-2 text-center text-black">
+                    <div class="h5 font-weight-bold title-line"><span>Q &amp; A</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="my-2">
+                            <a class="btn btn-outline-primary d-flex justify-content-between" href="" data-toggle="collapse" data-target="#collapse-qa1">
+                                <div class="text-left">攜碼是什麼？</div>
+                            </a>
+                            <div class="collapse" id="collapse-qa1">
+                                <div class="card card-body p-3">
+                                    LG V30+ 主相機配置 1,600 萬畫素標準鏡頭 + 1,300 萬畫素廣角鏡頭，標準鏡頭採用 F1.6 大光圈，能帶來更多透光度、提升動態拍攝解析度，還支援 OIS + EIS 防手震及混合式自動對焦 Hybrid Auto Focus，且結合雷射偵測自動對焦與相位偵測自動對焦功能
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <a class="btn btn-outline-primary d-flex justify-content-between" href="" data-toggle="collapse" data-target="#collapse-qa2">
+                                <div class="text-left">攜碼是什麼？</div>
+                            </a>
+                            <div class="collapse" id="collapse-qa2">
+                                <div class="card card-body p-3">
+                                    LG V30+ 主相機配置 1,600 萬畫素標準鏡頭
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="my-2">
+                            <a class="btn btn-outline-primary d-flex justify-content-between" href="" data-toggle="collapse" data-target="#collapse-qa3">
+                                <div class="text-left">攜碼是什麼？</div>
+                            </a>
+                            <div class="collapse" id="collapse-qa3">
+                                <div class="card card-body p-3">
+                                    LG V30+ 主相機配置 1,600 萬畫素標準鏡頭 + 1,300 萬畫素廣角鏡頭，標準鏡頭採用 F1.6 大光圈，能帶來更多透光度、提升動態拍攝解析度，還支援 OIS + EIS 防手震及混合式自動對焦 Hybrid Auto Focus，且結合雷射偵測自動對焦與相位偵測自動對焦功能LG V30+ 主相機配置 1,600 萬畫素標準鏡頭 + 1,300 萬畫素廣角鏡頭，標準鏡頭採用 F1.6 大光圈，能帶來更多透光度、提升動態拍攝解析度，還支援 OIS + EIS 防手震及混合式自動對焦 Hybrid Auto Focus，且結合雷射偵測自動對焦與相位偵測自動對焦功能
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

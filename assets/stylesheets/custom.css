@@ -7,6 +7,10 @@
    ========================================================================== */
 /* Fonts */
 /* Path */
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   -webkit-overflow-scrolling: touch; }
 
@@ -17,11 +21,6 @@ hr {
 
 a {
   transition: all 0.2s ease; }
-a img {
-  transition: all 0.2s ease; }
-a img:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8; }
 
 .text-gray-3 {
   color: #dee2e6; }
@@ -146,7 +145,7 @@ select {
   background-color: #c54232; }
 
 .bootstrap-touchspin .btn-outline {
-  background: none;
+  background-color: #fff;
   border: 1px solid #ced4da; }
 .bootstrap-touchspin .btn-up {
   border-left: 0; }
@@ -214,6 +213,12 @@ select {
   display: block; }
 .chk:checked + label .bg-gray-6 {
   background: #1a6795; }
+.chk:checked + label .box-price > div {
+  color: #fff !important; }
+.chk:checked + label .box-price-month {
+  background-color: #1a6795; }
+.chk:checked + label .box-price-total {
+  background-color: #fe8600; }
 
 .box-select {
   position: relative; }
@@ -221,9 +226,66 @@ select {
   position: absolute;
   right: 5px;
   top: 5px;
+  z-index: 10;
   display: none; }
 .box-select .bg-gray-6.text-row-2 {
   height: 3.2rem; }
+
+#section-main .custom-radio {
+  margin: 0;
+  padding: 0; }
+#section-main .custom-radio .custom-control-label {
+  padding: .25rem 1rem;
+  border: 1px solid #6c757d;
+  cursor: pointer; }
+#section-main .custom-radio .custom-control-label:hover {
+  background-color: #1a6795;
+  border-color: #1a6795;
+  color: #fff; }
+#section-main .custom-radio .custom-control-label::before {
+  background: none; }
+#section-main .custom-radio .custom-control-input {
+  display: none; }
+#section-main .custom-radio .custom-control-input:checked ~ .custom-control-label {
+  background-color: #1a6795;
+  border-color: #1a6795;
+  color: #fff; }
+#section-main .custom-radio .custom-control-input:checked ~ .custom-control-label::before, #section-main .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background: none; }
+
+#section-checkout {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+
+.title-pk .col {
+  position: relative; }
+.title-pk .col .lead {
+  line-height: 30px; }
+.title-pk .col:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  display: block;
+  content: '';
+  border-style: solid; }
+.title-pk .col-official {
+  padding-right: 7rem;
+  background-color: #fe8600;
+  text-align: right; }
+.title-pk .col-official:before {
+  left: 0;
+  border-width: 15px 15px 15px 0;
+  border-color: #fff #fe8600 #fff #fff; }
+.title-pk .col-telecom {
+  padding-left: 7rem;
+  background-color: #17a2b8; }
+.title-pk .col-telecom:before {
+  right: 0;
+  border-width: 15px 0 15px 15px;
+  border-color: #fff #fff #fff #17a2b8; }
 
 .border-gray-6 {
   border-color: #6c757d !important; }
@@ -307,8 +369,9 @@ a.card:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5; }
 
-[data-toggle="collapse"] {
-  position: relative; }
+[data-toggle="collapse"]:after {
+  float: right;
+  font-family: FontAwesome; }
 [data-toggle="collapse"][aria-expanded="true"]:after {
   content: '\f146'; }
 [data-toggle="collapse"][aria-expanded="false"]:after {
@@ -320,11 +383,6 @@ a.card:hover img {
 .pushy [data-toggle="collapse"][aria-expanded="false"]:after {
   content: '\f105'; }
 .pushy [data-toggle="collapse"]:after {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  margin-top: -10px;
-  font-family: FontAwesome;
   content: '\f105'; }
 
 .dropdown-menu-w100 {
@@ -339,6 +397,132 @@ a.card:hover img {
 .dropdown-cart {
   width: 400px; }
 
+.ekko-lightbox {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-right: 0 !important; }
+
+.ekko-lightbox-container {
+  position: relative; }
+
+.ekko-lightbox-container > div.ekko-lightbox-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%; }
+
+.ekko-lightbox iframe {
+  width: 100%;
+  height: 100%; }
+
+.ekko-lightbox-nav-overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex; }
+
+.ekko-lightbox-nav-overlay a {
+  -ms-flex: 1;
+  flex: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .5s;
+  color: #000;
+  font-size: 30px;
+  z-index: 1; }
+
+.ekko-lightbox-nav-overlay a > * {
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+
+.ekko-lightbox-nav-overlay a > :focus {
+  outline: none; }
+
+.ekko-lightbox-nav-overlay a span {
+  padding: 0 30px; }
+
+.ekko-lightbox-nav-overlay a:last-child span {
+  text-align: right; }
+
+.ekko-lightbox-nav-overlay a:hover {
+  text-decoration: none; }
+
+.ekko-lightbox-nav-overlay a:focus {
+  outline: none; }
+
+.ekko-lightbox-nav-overlay a.disabled {
+  cursor: default;
+  visibility: hidden; }
+
+.ekko-lightbox a:hover {
+  opacity: 1;
+  text-decoration: none; }
+
+.ekko-lightbox .modal-dialog {
+  display: none; }
+
+.ekko-lightbox .modal-footer {
+  text-align: left; }
+
+.ekko-lightbox-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ekko-lightbox-loader > div {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center; }
+
+.ekko-lightbox-loader > div > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: a 2s infinite ease-in-out; }
+
+.ekko-lightbox-loader > div > div:last-child {
+  animation-delay: -1s; }
+
+.modal-dialog .ekko-lightbox-loader > div > div {
+  background-color: #333; }
+
+@keyframes a {
+  0%,to {
+    transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
 /*! Pushy - v1.1.0 - 2017-1-30
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
@@ -595,3 +779,7 @@ a.card:hover img {
   background-color: #fff; }
 .slick-dots li.slick-active button {
   background-color: #fff; }
+
+.slider-single .slick-prev, .slider-single .slick-next, .slider-items-4 .slick-prev, .slider-items-4 .slick-next {
+  top: 50%;
+  margin-top: -.5rem; }

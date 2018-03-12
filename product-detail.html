@@ -26,7 +26,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
-<body>
+<body id="top">
 
     <nav class="pushy pushy-right bg-white">
         <!-- module: nav-mobile -->
@@ -34,12 +34,117 @@
         <!-- module: ./nav-mobile -->
     </nav>
 
-    <!-- module: global-header -->
-    <div id="global-header"></div>
-    <!-- ./module: global-header -->
+    <div class="site-overlay"></div>
+
+    <header id="header" class="sticky-top bg-white border-bottom push">
+        <!-- module: global-header -->
+        <div id="global-header"></div>
+        <!-- ./module: global-header -->
+    </header>
 
     <div id="main" class="push py-10">
         <div class="container">
+
+            <!-- 主商品 -->
+            <div class="" id="section-main">
+                <div class="mb-8">
+                    <div class="row">
+                        <div class="col-md-7 order-md-last">
+                            <div class="h3 text-black font-weight-bold">Apple iPhone X 256GB</div>
+                            <hr class="my-2">
+                            <a class="mr-3" href="">
+<!--                                <i class="fas fa-heart text-danger"></i> 已追蹤-->
+                                <i class="far fa-heart text-danger"></i> 加入追蹤
+                            </a>
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+                            <hr class="my-2">
+                            <div class="">
+                                <div class="form-group row mb-2 align-items-lg-center">
+                                    <label class="col-md-3 col-lg-2 col-form-label">選擇顏色</label>
+                                    <div class="col-md-9 col-lg-10">
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-color-1" name="radio-colors" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-color-1">香檳色</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-color-2" name="radio-colors" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-color-2">紅色</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-2 align-items-lg-center">
+                                    <label class="col-md-3 col-lg-2 col-form-label">申辦類別</label>
+                                    <div class="col-md-9 col-lg-10">
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-type-1" name="radio-types" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-type-1">新辦</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-type-2" name="radio-types" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-type-2">續約</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-2 align-items-lg-center">
+                                    <label class="col-md-3 col-lg-2 col-form-label">電信業者</label>
+                                    <div class="col-md-9 col-lg-10">
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-telecom-1" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-1">中華電信</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-2">遠傳電信</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-2">台灣大哥大</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-2">台灣之星</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline my-1">
+                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-2">亞太電信</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-2 align-items-lg-center">
+                                    <label for="" class="col-md-3 col-lg-2 col-form-label">最低專案價</label>
+                                    <div class="col-md-9 col-lg-10">
+                                        <div class="form-control-plaintext">
+                                            $ <span class="text-danger lead">12,888</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-lg btn-outline-primary btn-anchor px-6" href="#section-project">
+                                查看專案價格
+                            </a>
+                        </div>
+                        <div class="col-md-5 mt-2 mt-md-0">
+                            <div class="row slider-single">
+                                <div class="col-12 text-center p-0">
+                                    <a href="assets/images/uploads/prod1_640x480.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="照片1">
+                                        <img src="assets/images/uploads/prod1_640x480.jpg" class="img-fluid mx-auto" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-12 text-center p-0">
+                                    <a href="assets/images/uploads/prod1-2_640x480.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="照片1">
+                                        <img src="assets/images/uploads/prod1-2_640x480.jpg" class="img-fluid mx-auto" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-12 text-center p-0">
+                                    <a href="assets/images/uploads/prod1-3_640x480.jpg" data-toggle="lightbox" data-gallery="multiimages" data-title="照片1">
+                                        <img src="assets/images/uploads/prod1-3_640x480.jpg" class="img-fluid mx-auto" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- 購物說明 -->
             <div class="mb-8">
@@ -47,7 +152,7 @@
                     <div class="col-6 col-md-3">
                         <div class="media">
                             <div class="mr-3 align-self-center">
-                                <i class="fas fa-3x fa-shopping-bag"></i>
+                                <i class="fas fa-fw fa-3x fa-shopping-bag"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
                                 如何購買如何購買如何購買如何購買如何購買如何購買
@@ -57,7 +162,7 @@
                     <div class="col-6 col-md-3">
                         <div class="media">
                             <div class="mr-3 align-self-center">
-                                <i class="fas fa-3x fa-truck"></i>
+                                <i class="fas fa-fw fa-3x fa-truck"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
                                 到府服務到府服務到府服務到府服務到府服務到府服務
@@ -67,7 +172,7 @@
                     <div class="col-6 col-md-3">
                         <div class="media">
                             <div class="mr-3 align-self-center">
-                                <i class="fas fa-3x fa-file"></i>
+                                <i class="fas fa-fw fa-3x fa-file"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
                                 保固說明保固說明保固說明保固說明保固說明保固說明
@@ -77,7 +182,7 @@
                     <div class="col-6 col-md-3">
                         <div class="media">
                             <div class="mr-3 align-self-center">
-                                <i class="fas fa-3x fa-credit-card"></i>
+                                <i class="fas fa-fw fa-3x fa-credit-card"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
                                 付款說明付款說明付款說明付款說明付款說明付款說明
@@ -109,16 +214,218 @@
             </div>
 
             <!-- 選擇您的專案 -->
-            <div class="" id="section2">
+            <div class="section-step" id="section-project">
             <div class="mb-8">
                 <div class="title mb-2 text-center text-black">
                     <div class="h5 title-line font-weight-bold"><span>選擇您的專案</span></div>
+                </div>
+                <div class="row slider-items-4">
+                    <div class="col-6 col-md-3 my-2">
+                        <div class="border border-gray-6 box-select">
+                            <input class="chk" type="checkbox" id="checkbox21" name="chk-group2">
+                            <label for="checkbox21">
+                                <i class="fas fa-check text-white"></i>
+                                <div class="row no-gutters">
+                                    <div class="col-6 py-1 box-price box-price-month">
+                                        <div class="px-4 text-primary">
+                                            月繳<div class="h4 font-weight-bold">$699</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 py-1 box-price box-price-total">
+                                        <div class="px-4 text-warning">
+                                            專案價<div class="h4 font-weight-bold">$37,500</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr class="mt-0">
+                                        <div class="text-center">約期：30個月　預繳：4,500</div>
+                                        <hr>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                            <ul class="media-body m-0">
+                                                <li>上網吃到飽</li>
+                                                <li>網內一門熱線免費</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-phone"></i>
+                                            <ul class="media-body m-0">
+                                                <li>網內45分鐘</li>
+                                                <li>網外40分鐘</li>
+                                                <li>市話15分鐘</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-2">
+                        <div class="border border-gray-6 box-select">
+                            <input class="chk" type="checkbox" id="checkbox22" name="chk-group2">
+                            <label for="checkbox22">
+                                <i class="fas fa-check text-white"></i>
+                                <div class="row no-gutters">
+                                    <div class="col-6 py-1 box-price box-price-month">
+                                        <div class="px-4 text-primary">
+                                            月繳<div class="h4 font-weight-bold">$699</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 py-1 box-price box-price-total">
+                                        <div class="px-4 text-warning">
+                                            專案價<div class="h4 font-weight-bold">$37,500</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr class="mt-0">
+                                        <div class="text-center">約期：30個月　預繳：4,500</div>
+                                        <hr>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                            <ul class="media-body m-0">
+                                                <li>上網吃到飽</li>
+                                                <li>網內一門熱線免費</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-phone"></i>
+                                            <ul class="media-body m-0">
+                                                <li>網內45分鐘</li>
+                                                <li>網外40分鐘</li>
+                                                <li>市話15分鐘</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-2">
+                        <div class="border border-gray-6 box-select">
+                            <input class="chk" type="checkbox" id="checkbox23" name="chk-group2">
+                            <label for="checkbox23">
+                                <i class="fas fa-check text-white"></i>
+                                <div class="row no-gutters">
+                                    <div class="col-6 py-1 box-price box-price-month">
+                                        <div class="px-4 text-primary">
+                                            月繳<div class="h4 font-weight-bold">$699</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 py-1 box-price box-price-total">
+                                        <div class="px-4 text-warning">
+                                            專案價<div class="h4 font-weight-bold">$37,500</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr class="mt-0">
+                                        <div class="text-center">約期：30個月　預繳：4,500</div>
+                                        <hr>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                            <ul class="media-body m-0">
+                                                <li>上網吃到飽</li>
+                                                <li>網內一門熱線免費</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-phone"></i>
+                                            <ul class="media-body m-0">
+                                                <li>網內45分鐘</li>
+                                                <li>網外40分鐘</li>
+                                                <li>市話15分鐘</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-2">
+                        <div class="border border-gray-6 box-select">
+                            <input class="chk" type="checkbox" id="checkbox24" name="chk-group2">
+                            <label for="checkbox24">
+                                <i class="fas fa-check text-white"></i>
+                                <div class="row no-gutters">
+                                    <div class="col-6 py-1 box-price box-price-month">
+                                        <div class="px-4 text-primary">
+                                            月繳<div class="h4 font-weight-bold">$699</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 py-1 box-price box-price-total">
+                                        <div class="px-4 text-warning">
+                                            專案價<div class="h4 font-weight-bold">$37,500</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr class="mt-0">
+                                        <div class="text-center">約期：30個月　預繳：4,500</div>
+                                        <hr>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                            <ul class="media-body m-0">
+                                                <li>上網吃到飽</li>
+                                                <li>網內一門熱線免費</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-phone"></i>
+                                            <ul class="media-body m-0">
+                                                <li>網內45分鐘</li>
+                                                <li>網外40分鐘</li>
+                                                <li>市話15分鐘</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-2">
+                        <div class="border border-gray-6 box-select">
+                            <input class="chk" type="checkbox" id="checkbox25" name="chk-group2">
+                            <label for="checkbox25">
+                                <i class="fas fa-check text-white"></i>
+                                <div class="row no-gutters">
+                                    <div class="col-6 py-1 box-price box-price-month">
+                                        <div class="px-4 text-primary">
+                                            月繳<div class="h4 font-weight-bold">$1,288</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 py-1 box-price box-price-total">
+                                        <div class="px-4 text-warning">
+                                            專案價<div class="h4 font-weight-bold">$21,500</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr class="mt-0">
+                                        <div class="text-center">約期：30個月　預繳：4,500</div>
+                                        <hr>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-wifi"></i>
+                                            <ul class="media-body m-0">
+                                                <li>上網吃到飽</li>
+                                                <li>網內一門熱線免費</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media my-2 px-4 text-dark">
+                                            <i class="fas fa-fw fa-2x fa-phone"></i>
+                                            <ul class="media-body m-0">
+                                                <li>網內45分鐘</li>
+                                                <li>網外40分鐘</li>
+                                                <li>市話15分鐘</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
 
             <!-- 選擇您的預繳資格 -->
-            <div class="" id="section-prepay">
+            <div class="section-step" id="section-prepay">
             <div class="mb-8">
                 <div class="title mb-2 text-center text-black">
                     <div class="h5 title-line font-weight-bold"><span>選擇您的預繳資格</span></div>
@@ -367,6 +674,27 @@
                     </div>
                 </div>
             </div>
+            </div>
+
+            <!-- 加入購物車 -->
+            <div class="section-step container alert alert-primary m-0 mx-auto" id="section-checkout">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-7 col-lg-5 order-md-first mb-sm-0">
+                        <div class="lead">Apple iPhone X 256GB</div>
+                        <div>攜碼 中華電信 699專案<br>預繳$4500 (可抵月租費)</div>
+                    </div>
+
+                    <div class="col-12 col-sm-5 col-lg-3 order-lg-2 my-2 mb-sm-0">
+                        <div class="h4 text-black font-weight-bold">NT$ 47,800</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 order-md-2 order-lg-3 mb-2 mb-sm-0">
+                        <input id="" type="text" value="1" class="form-control text-center input-number">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-2 order-md-last">
+                        <a class="btn btn-lg btn-block btn-primary" href="">加入購物車</a>
+                    </div>
+                </div>
+
             </div>
 
             <!-- 商品介紹 -->
@@ -979,6 +1307,8 @@
     <div id="fb-root"></div>
 
     <!-- single -->
+    <script src="assets/javascripts/vendor/bootstrap.ekko-lightbox.min.js"></script>
+    <script src="assets/javascripts/function/lightbox.js"></script>
     <script>
         var section1 = $('#section-primary');
         var section2 = $('#section-project');
@@ -986,35 +1316,26 @@
         var section4 = $('#section-acc');
         var section5 = $('#section-checkout');
 
-
-
-//            $("#section1 input:checkbox").click(function() {
-//                if($(this).is(":checked")) {
-//                    //$("#section2").fadeIn();
-//                } else {
-//                    $("#section2, #section3, #section4").fadeOut();
-//                }
-//            });
-
-//            $('.select-s1').change(function(){
-//                $('#' + $(this).val()).fadeIn();
-//            });
-//
-//            $("#section2 input:checkbox").click(function() {
-//                if($(this).is(":checked")) {
-//                    $("#section3").fadeIn();
-//                } else {
-//                    $("#section3, #section4").fadeOut();
-//                }
-//            });
-            $('#section-prepay input:checkbox').click(function() {
-                if($(this).is(":checked")) {
-                    section4.addClass("section-active").fadeIn();
-                } else {
-                    section4.fadeOut();
-                }
-            });
-        </script>
+        $('#section-main .btn-anchor').click(function() {
+            section2.addClass("section-active").fadeIn();
+        });
+        $('#section-project input:checkbox').click(function() {
+            if($(this).is(":checked")) {
+                section3.addClass("section-active").fadeIn();
+            } else {
+                section3.fadeOut();
+            }
+        });
+        $('#section-prepay input:checkbox').click(function() {
+            if($(this).is(":checked")) {
+                section4.addClass("section-active").fadeIn();
+                section5.addClass("section-active").fadeIn();
+            } else {
+                section4.fadeOut();
+                section5.fadeOut();
+            }
+        });
+    </script>
 
     <!-- module include -->
     <script src="assets/javascripts/function/module.js"></script>
