@@ -58,20 +58,22 @@
                             </a>
                             <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
                             <hr class="my-2">
-                            <div class="">
+                            <form class="" id="form-select">
+                                <div class="lead text-black">請選擇款式</div>
                                 <div class="form-group row mb-2 align-items-lg-center">
                                     <label class="col-md-3 col-lg-2 col-form-label">選擇顏色</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-color-1" name="radio-colors" class="custom-control-input">
+                                            <input type="radio" id="radio-color-1" name="radio-colors" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-color-1">香檳色</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-color-2" name="radio-colors" class="custom-control-input">
+                                            <input type="radio" id="radio-color-2" name="radio-colors" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-color-2">紅色</label>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="form-group row mb-2 align-items-lg-center">
                                     <label class="col-md-3 col-lg-2 col-form-label">申辦類別</label>
                                     <div class="col-md-9 col-lg-10">
@@ -85,7 +87,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group row mb-2 align-items-lg-center">
+                                <div class="form-group row mb-2 align-items-lg-center zone-telecom">
                                     <label class="col-md-3 col-lg-2 col-form-label">電信業者</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="custom-control custom-radio custom-control-inline my-1">
@@ -97,16 +99,16 @@
                                             <label class="custom-control-label" for="radio-telecom-2">遠傳電信</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
-                                            <label class="custom-control-label" for="radio-telecom-2">台灣大哥大</label>
+                                            <input type="radio" id="radio-telecom-3" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-3">台灣大哥大</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
-                                            <label class="custom-control-label" for="radio-telecom-2">台灣之星</label>
+                                            <input type="radio" id="radio-telecom-4" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-4">台灣之星</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
-                                            <label class="custom-control-label" for="radio-telecom-2">亞太電信</label>
+                                            <input type="radio" id="radio-telecom-5" name="radio-telecoms" class="custom-control-input">
+                                            <label class="custom-control-label" for="radio-telecom-5">亞太電信</label>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +120,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="alert alert-danger form-error mt-3 text-center" style="display: none;">
+                                    請完成款式選擇
+                                </div>
+                            </form>
                             <a class="btn btn-lg btn-outline-primary btn-anchor px-6" href="#section-project">
                                 查看專案價格
                             </a>
@@ -155,7 +160,7 @@
                                 <i class="fas fa-fw fa-3x fa-shopping-bag"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
-                                如何購買如何購買如何購買如何購買如何購買如何購買
+                                <a href="">如何購買如何購買如何購買如何購買如何購買如何購買</a>
                             </div>
                         </div>
                     </div>
@@ -165,7 +170,7 @@
                                 <i class="fas fa-fw fa-3x fa-truck"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
-                                到府服務到府服務到府服務到府服務到府服務到府服務
+                                <a href="">到府服務到府服務到府服務到府服務到府服務到府服務</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +180,7 @@
                                 <i class="fas fa-fw fa-3x fa-file"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
-                                保固說明保固說明保固說明保固說明保固說明保固說明
+                                <a href="">保固說明保固說明保固說明保固說明保固說明保固說明</a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +190,7 @@
                                 <i class="fas fa-fw fa-3x fa-credit-card"></i>
                             </div>
                             <div class="media-body align-self-center font-small">
-                                付款說明付款說明付款說明付款說明付款說明付款說明
+                                <a href="">付款說明付款說明付款說明付款說明付款說明付款說明</a>
                             </div>
                         </div>
                     </div>
@@ -226,12 +231,12 @@
                             <label for="checkbox21">
                                 <i class="fas fa-check text-white"></i>
                                 <div class="row no-gutters">
-                                    <div class="col-6 py-1 box-price box-price-month">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-month">
                                         <div class="px-4 text-primary">
                                             月繳<div class="h4 font-weight-bold">$699</div>
                                         </div>
                                     </div>
-                                    <div class="col-6 py-1 box-price box-price-total">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-total">
                                         <div class="px-4 text-warning">
                                             專案價<div class="h4 font-weight-bold">$37,500</div>
                                         </div>
@@ -255,6 +260,7 @@
                                                 <li>市話15分鐘</li>
                                             </ul>
                                         </div>
+                                        <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
                                     </div>
                                 </div>
                             </label>
@@ -266,12 +272,12 @@
                             <label for="checkbox22">
                                 <i class="fas fa-check text-white"></i>
                                 <div class="row no-gutters">
-                                    <div class="col-6 py-1 box-price box-price-month">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-month">
                                         <div class="px-4 text-primary">
                                             月繳<div class="h4 font-weight-bold">$699</div>
                                         </div>
                                     </div>
-                                    <div class="col-6 py-1 box-price box-price-total">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-total">
                                         <div class="px-4 text-warning">
                                             專案價<div class="h4 font-weight-bold">$37,500</div>
                                         </div>
@@ -295,6 +301,7 @@
                                                 <li>市話15分鐘</li>
                                             </ul>
                                         </div>
+                                        <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
                                     </div>
                                 </div>
                             </label>
@@ -306,12 +313,12 @@
                             <label for="checkbox23">
                                 <i class="fas fa-check text-white"></i>
                                 <div class="row no-gutters">
-                                    <div class="col-6 py-1 box-price box-price-month">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-month">
                                         <div class="px-4 text-primary">
                                             月繳<div class="h4 font-weight-bold">$699</div>
                                         </div>
                                     </div>
-                                    <div class="col-6 py-1 box-price box-price-total">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-total">
                                         <div class="px-4 text-warning">
                                             專案價<div class="h4 font-weight-bold">$37,500</div>
                                         </div>
@@ -335,6 +342,7 @@
                                                 <li>市話15分鐘</li>
                                             </ul>
                                         </div>
+                                        <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
                                     </div>
                                 </div>
                             </label>
@@ -346,12 +354,12 @@
                             <label for="checkbox24">
                                 <i class="fas fa-check text-white"></i>
                                 <div class="row no-gutters">
-                                    <div class="col-6 py-1 box-price box-price-month">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-month">
                                         <div class="px-4 text-primary">
                                             月繳<div class="h4 font-weight-bold">$699</div>
                                         </div>
                                     </div>
-                                    <div class="col-6 py-1 box-price box-price-total">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-total">
                                         <div class="px-4 text-warning">
                                             專案價<div class="h4 font-weight-bold">$37,500</div>
                                         </div>
@@ -375,6 +383,7 @@
                                                 <li>市話15分鐘</li>
                                             </ul>
                                         </div>
+                                        <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
                                     </div>
                                 </div>
                             </label>
@@ -386,12 +395,12 @@
                             <label for="checkbox25">
                                 <i class="fas fa-check text-white"></i>
                                 <div class="row no-gutters">
-                                    <div class="col-6 py-1 box-price box-price-month">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-month">
                                         <div class="px-4 text-primary">
                                             月繳<div class="h4 font-weight-bold">$1,288</div>
                                         </div>
                                     </div>
-                                    <div class="col-6 py-1 box-price box-price-total">
+                                    <div class="col-6 col-lg-12 col-xl-6 py-1 box-price box-price-total">
                                         <div class="px-4 text-warning">
                                             專案價<div class="h4 font-weight-bold">$21,500</div>
                                         </div>
@@ -415,6 +424,7 @@
                                                 <li>市話15分鐘</li>
                                             </ul>
                                         </div>
+                                        <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
                                     </div>
                                 </div>
                             </label>
@@ -472,7 +482,7 @@
                     <div class="h5 title-line font-weight-bold"><span>超值加購</span></div>
                 </div>
                 <div class="row slider-items-6">
-                    <div class="col my-2 item">
+                    <div class="col py-2 item add-1">
                         <figure class="figure d-block text-center m-0">
                             <img class="img-fluid mb-2" src="assets/images/uploads/prod-acc1.jpg" srcset="assets/images/uploads/prod-acc1@2x.jpg 2x" alt="">
                         </figure>
@@ -481,16 +491,38 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
                                 <option>請選擇款式</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mb-1">
                             <input id="" type="text" value="1" class="form-control text-center input-number">
                         </div>
+                        <a class="btn btn-block btn-outline-primary btn-add" id="add-1" href="javascript:void();">加入</a>
+                    </div>
+                    <div class="col py-2 item add-2">
+                        <figure class="figure d-block text-center m-0">
+                            <img class="img-fluid mb-2" src="assets/images/uploads/prod-acc1.jpg" srcset="assets/images/uploads/prod-acc1@2x.jpg 2x" alt="">
+                        </figure>
+                        <div class="text-black text-row-2">
+                            hoda 非滿版鋼化玻璃保護貼 (0.33mm)
+                        </div>
+                        <div class="my-1 d-flex justify-content-between">
+                            <del>$590</del>
+                            <span class="text-danger font-weight-bold">$300</span>
+                        </div>
+                        <div class="form-group mb-1">
+                            <select class="custom-select">
+                                <option>請選擇款式</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-1">
+                            <input id="" type="text" value="1" class="form-control text-center input-number">
+                        </div>
+                        <a class="btn btn-block btn-outline-primary btn-add" id="add-2" href="javascript:void();">加入</a>
                     </div>
                     <div class="col my-2 item">
                         <figure class="figure d-block text-center m-0">
@@ -501,47 +533,7 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
-                        </div>
-                        <div class="form-group mb-1">
-                            <select class="custom-select">
-                                <option>請選擇款式</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input id="" type="text" value="1" class="form-control text-center input-number">
-                        </div>
-                    </div>
-                    <div class="col my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod-acc1.jpg" srcset="assets/images/uploads/prod-acc1@2x.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            hoda 非滿版鋼化玻璃保護貼 (0.33mm)
-                        </div>
-                        <div class="my-1 d-flex justify-content-between">
-                            <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
-                        </div>
-                        <div class="form-group mb-1">
-                            <select class="custom-select">
-                                <option>請選擇款式</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input id="" type="text" value="1" class="form-control text-center input-number">
-                        </div>
-                    </div>
-                    <div class="col my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod-acc1.jpg" srcset="assets/images/uploads/prod-acc1@2x.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            hoda 非滿版鋼化玻璃保護貼 (0.33mm)
-                        </div>
-                        <div class="my-1 d-flex justify-content-between">
-                            <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -561,7 +553,27 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
+                        </div>
+                        <div class="form-group mb-1">
+                            <select class="custom-select">
+                                <option>請選擇款式</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input id="" type="text" value="1" class="form-control text-center input-number">
+                        </div>
+                    </div>
+                    <div class="col my-2 item">
+                        <figure class="figure d-block text-center m-0">
+                            <img class="img-fluid mb-2" src="assets/images/uploads/prod-acc1.jpg" srcset="assets/images/uploads/prod-acc1@2x.jpg 2x" alt="">
+                        </figure>
+                        <div class="text-black text-row-2">
+                            hoda 非滿版鋼化玻璃保護貼 (0.33mm)
+                        </div>
+                        <div class="my-1 d-flex justify-content-between">
+                            <del>$590</del>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -581,7 +593,7 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -601,7 +613,7 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -621,7 +633,7 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -641,7 +653,7 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -661,7 +673,7 @@
                         </div>
                         <div class="my-1 d-flex justify-content-between">
                             <del>$590</del>
-                            <span>$<span class="text-danger font-weight-bold">300</span></span>
+                            <span class="text-danger font-weight-bold">$300</span>
                         </div>
                         <div class="form-group mb-1">
                             <select class="custom-select">
@@ -679,18 +691,18 @@
             <!-- 加入購物車 -->
             <div class="section-step container alert alert-primary m-0 mx-auto" id="section-checkout">
                 <div class="row align-items-center">
-                    <div class="col-12 col-sm-7 col-lg-5 order-md-first mb-sm-0">
+                    <div class="col-12 col-sm-4 col-lg-5 order-md-first mb-2 mb-sm-0">
                         <div class="lead">Apple iPhone X 256GB</div>
                         <div>攜碼 中華電信 699專案<br>預繳$4500 (可抵月租費)</div>
                     </div>
 
-                    <div class="col-12 col-sm-5 col-lg-3 order-lg-2 my-2 mb-sm-0">
+                    <div class="col-6 col-sm-2 col-lg-3 order-lg-2">
                         <div class="h4 text-black font-weight-bold">NT$ 47,800</div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-2 order-md-2 order-lg-3 mb-2 mb-sm-0">
+                    <div class="col-12 col-sm-3 col-lg-2 order-md-2 order-lg-3 d-none d-sm-block">
                         <input id="" type="text" value="1" class="form-control text-center input-number">
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-2 order-md-last">
+                    <div class="col-6 col-sm-3 col-lg-2 order-md-last">
                         <a class="btn btn-lg btn-block btn-primary" href="">加入購物車</a>
                     </div>
                 </div>
@@ -875,224 +887,149 @@
                 <div class="row slider-items-6">
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
+                        <a class="text-black text-row-2" href="">
                             小米 紅米5
-                        </div>
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
+                        <a class="text-black text-row-2" href="">
                             小米 紅米5
-                        </div>
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
+                        <a class="text-black text-row-2" href="">
                             小米 紅米5
-                        </div>
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
+                        <a class="text-black text-row-2" href="">
                             小米 紅米5
-                        </div>
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
+                        <a class="text-black text-row-2" href="">
                             小米 紅米5
-                        </div>
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod1_160x120.jpg" srcset="assets/images/uploads/prod1_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
+                        <a class="text-black text-row-2" href="">
                             小米 紅米5
-                        </div>
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
 
                     <div class="col-6 col-md-3 col-lg-2 my-2 item">
                         <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
+                            <a href="">
+                                <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
+                            </a>
                         </figure>
-                        <div class="text-black text-row-2">
-                            Samsung Galaxy S9 Plus 256GB
-                        </div>
+                        <a class="text-black text-row-2" href="">
+                            小米 紅米5
+                        </a>
                         <div class="telecom my-1">
                             <span class="badge badge-cht">中華</span>
                             <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
                         </div>
                         <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Samsung Galaxy S9 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Samsung Galaxy S9 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Samsung Galaxy S9 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Samsung Galaxy S9 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
-                        </div>
-                        <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
-                    </div>
-                    <div class="col-6 col-md-3 col-lg-2 my-2 item">
-                        <figure class="figure d-block text-center m-0">
-                            <img class="img-fluid mb-2" src="assets/images/uploads/prod2_160x120.jpg" srcset="assets/images/uploads/prod2_360x270.jpg 2x" alt="">
-                        </figure>
-                        <div class="text-black text-row-2">
-                            Samsung Galaxy S9 Plus 256GB
-                        </div>
-                        <div class="telecom my-1">
-                            <span class="badge badge-cht">中華</span>
-                            <span class="badge badge-fetnet">遠傳</span>
-                            <span class="badge badge-twm">台哥大</span>
-                            <span class="badge badge-tstar">台灣之星</span>
-                            <span class="badge badge-aptg">亞太</span>
-                        </div>
-                        <div class="my-1">
-                            <span class="text-black font-small">最低專案價</span>
-                            $<span class="text-danger font-weight-bold">15,000</span>
+                            <a href="">
+                                <span class="text-black font-small">最低專案價</span>
+                            <span class="text-danger font-weight-bold">$15,000</span>
+                            </a>
                         </div>
                         <a class="btn btn-outline-primary btn-block" href="product-detail.html">立即了解</a>
                     </div>
@@ -1109,7 +1046,7 @@
                 </div>
                 <div class="row justify-content-between align-items-center">
                     <div class="col">
-                        <a class="btn btn-sm btn-outline-primary" href="" data-toggle="modal" data-target="#modal-review">撰寫評論</a>
+                        <a class="btn btn-sm btn-outline-primary" href="" data-toggle="modal" data-target="#modal-login">撰寫評論</a>
                     </div>
                     <div class="col">
                         <div class="font-small text-right">1 - 5 則評論，共 305 則</div>
@@ -1127,6 +1064,7 @@
                         <div class="text-black">
                             適合開車的旅客
                         </div>
+                        <div class="font-small text-gray-6">2017/12/31</div>
                         <div class="font-small readmore-review">
                             在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供
                         </div>
@@ -1146,6 +1084,7 @@
                         <div class="text-black">
                             適合開車的旅客
                         </div>
+                        <div class="font-small text-gray-6">2017/12/31</div>
                         <div class="font-small readmore-review">
                             在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床
                         </div>
@@ -1165,6 +1104,7 @@
                         <div class="text-black">
                             適合開車的旅客
                         </div>
+                        <div class="font-small text-gray-6">2017/12/31</div>
                         <div class="font-small readmore-review">
                             在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床，但要主動詢問才會幫忙準備，整體來說是值得入住的飯店在agoda訂房有註明有2歲小孩，飯店有提供
                         </div>
@@ -1184,6 +1124,7 @@
                         <div class="text-black">
                             適合開車的旅客
                         </div>
+                        <div class="font-small text-gray-6">2017/12/31</div>
                         <div class="font-small readmore-review">
                             在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床
                         </div>
@@ -1203,6 +1144,7 @@
                         <div class="text-black">
                             適合開車的旅客
                         </div>
+                        <div class="font-small text-gray-6">2017/12/31</div>
                         <div class="font-small readmore-review">
                             在agoda訂房有註明有2歲小孩，飯店有提供嬰兒床
                         </div>
@@ -1229,6 +1171,70 @@
     <!-- module: ./global-footer -->
 
     <!-- Modal -->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <div class="modal-title h5 text-black">登入</div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-12">
+                                <div class="lead text-black mb-2">快速登入</div>
+                                <div class="">
+                                    <a class="btn btn-block btn-lg btn-fb p-0" href="">
+                                        <div class="float-left pl-xl-5 pl-0">
+                                            <i class="fab fa-facebook"></i>
+                                        </div>
+                                        <span>以Facebook帳號登入</span>
+                                    </a>
+                                    <a class="btn btn-block btn-lg btn-line p-0" href="">
+                                        <div class="float-left pl-xl-5 pl-0">
+                                            <i class="fab fa-line"></i>
+                                        </div>
+                                        <span>以Line帳號登入</span>
+                                    </a>
+                                </div>
+                                <div class="title mt-4 mb-2 text-center">
+                                    <div class="font-small"><span>或</span></div>
+                                </div>
+                                <div class="lead text-black mb-2">以手機王帳號登入</div>
+                                <form>
+                                    <div class="form-group mb-2">
+                                        <input class="form-control bg-gray-3 py-2 border-0" type="email" placeholder="電子信箱">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input class="form-control bg-gray-3 py-2 border-0" type="password" placeholder="密碼">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="chk-remember" name="chk-remember">
+                                            <label class="custom-control-label" for="chk-remember">記住我</label>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="col-6 pr-1">
+                                            <a class="btn btn-primary btn-lg btn-block" href="" data-dismiss="modal">登入</a>
+                                        </div>
+                                        <div class="col-6 pl-1">
+                                            <a class="btn btn-secondary btn-lg btn-block" href="">忘記密碼</a>
+                                        </div>
+                                        <div class="col-12 py-1">
+                                            <a href=""><u>還不是會員，建立帳號</u></a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!--
     <div class="modal fade" id="modal-review" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -1295,6 +1301,7 @@
             </div>
         </div>
     </div>
+-->
 
     <!-- global -->
     <script src="assets/javascripts/vendor/popper.min.js"></script>
@@ -1322,6 +1329,7 @@
         $('#section-project input:checkbox').click(function() {
             if($(this).is(":checked")) {
                 section3.addClass("section-active").fadeIn();
+                $('html, body').animate({scrollTop: section3.offset().top-100});
             } else {
                 section3.fadeOut();
             }
@@ -1330,11 +1338,27 @@
             if($(this).is(":checked")) {
                 section4.addClass("section-active").fadeIn();
                 section5.addClass("section-active").fadeIn();
+                $('html, body').animate({scrollTop: section4.offset().top-100});
             } else {
                 section4.fadeOut();
                 section5.fadeOut();
             }
         });
+
+        $('.btn-add').click(function (e) {
+            var id = ($(this).attr("id"));
+            $('.slider-items-6').find('.item').each(function(){
+                if($(this).hasClass(id)) {
+                    $(this).toggleClass('border border-primary');
+                }
+            });
+            $(this).html( $(this).html() == '加入' ? '取消' :'加入' );
+        });
+
+//        $('.zone-telecom input[type=radio]').on('change', function() {
+//            $(this).closest("form").submit();
+//        });
+
     </script>
 
     <!-- module include -->

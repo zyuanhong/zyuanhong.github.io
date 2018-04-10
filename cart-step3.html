@@ -42,7 +42,7 @@
         <!-- ./module: global-header -->
     </header>
 
-    <div id="main" class="push bg-light py-10">
+    <div id="main" class="push bg-light py-lg-10 py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
@@ -256,6 +256,7 @@
                                     <div class="text-center text-danger">$29,800</div>
                                 </div>
                             </div>
+                            <hr class="my-2">
                             <div class="row align-items-center">
                                 <div class="col-lg-2 col-4 mb-3">
                                     <div class="text-center">
@@ -297,15 +298,23 @@
                             </div>
                         </div>
                         <hr class="my-2">
-                        <div class="row justify-content-between">
-                                    <div class="col-12 mb-3">
-                                        <div class="h5 text-black font-weight-bold">付款方式</div>
-                                    </div>
+                        <div class="row justify-content-center">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck-agree" data-toggle="collapse" href="#collapse-payment">
+                                <label class="custom-control-label" for="customCheck-agree">我同意<a href=""><u>手機王購物服務條款</u></a></label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapse-payment">
+                            <hr class="my-2">
+                            <div class="row justify-content-between">
+                                <div class="col-12 mb-3">
+                                    <div class="h5 text-black font-weight-bold">付款方式</div>
                                 </div>
-                        <div class="row">
+                            </div>
+                            <div class="row">
                                 <div class="col-12 col-md-6 col-lg-4 mb-2">
                                     <div class="text-center border border-gray-6 box-select">
-                                        <input class="chk" type="checkbox" id="checkbox-pay1" name="chk-group1">
+                                        <input class="chk" type="checkbox" id="checkbox-pay1" name="chk-group1" onclick='window.location.assign("cart-done.html")'>
                                         <label for="checkbox-pay1">
                                             <i class="fas fa-check text-primary"></i>
                                             <div class="py-6">
@@ -321,7 +330,7 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4 mb-2">
                                     <div class="text-center border border-gray-6 box-select">
-                                        <input class="chk" type="checkbox" id="checkbox-pay2" name="chk-group1">
+                                        <input class="chk" type="checkbox" id="checkbox-pay2" name="chk-group1" onclick='window.location.assign("cart-done.html")'>
                                         <label for="checkbox-pay2">
                                             <i class="fas fa-check text-primary"></i>
                                             <div class="py-6">
@@ -337,7 +346,7 @@
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4 mb-2">
                                     <div class="text-center border border-gray-6 box-select">
-                                        <input class="chk" type="checkbox" id="checkbox-pay3" name="chk-group1">
+                                        <input class="chk" type="checkbox" id="checkbox-pay3" name="chk-group1" onclick='window.location.assign("cart-done.html")'>
                                         <label for="checkbox-pay3">
                                             <i class="fas fa-check text-primary"></i>
                                             <div class="py-6">
@@ -352,6 +361,8 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+<!--
                         <hr class="my-2">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-8">
@@ -364,6 +375,7 @@
                                 <a class="btn btn-primary btn-lg px-md-10" href="cart-done.html">確定付款</a>
                             </div>
                         </div>
+-->
                     </div>
 
                 </div>

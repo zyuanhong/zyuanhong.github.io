@@ -88,7 +88,7 @@ $(document).scroll(function() {
 $('.slider-kv').slick({
     autoplay: true,
     autoplaySpeed: 5000,
-    arrows: false,
+//    arrows: false,
     dots: true,
 });
 
@@ -145,6 +145,28 @@ $('.slider-items-4').slick({
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.slider-items-2').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     responsive: [
         {
             breakpoint: 1024,

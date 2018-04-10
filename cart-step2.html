@@ -42,7 +42,7 @@
         <!-- ./module: global-header -->
     </header>
 
-    <div id="main" class="push bg-light py-10">
+    <div id="main" class="push bg-light py-lg-10 py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
@@ -74,7 +74,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">姓名</label>
+                                    <label for="" class="col-sm-4 col-form-label">姓</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">名</label>
                                     <div class="col-sm-8">
                                         <input type="text" class="form-control" id="" value="">
                                     </div>
@@ -115,7 +121,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">姓名</label>
+                                    <label for="" class="col-sm-4 col-form-label">姓</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 col-form-label">名</label>
                                     <div class="col-sm-8">
                                         <input type="text" class="form-control" id="" value="">
                                     </div>
@@ -178,7 +190,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 col-md-6 col-lg-4 mb-2">
-                                        <div class="text-center border border-gray-6 box-select">
+                                        <div class="text-center border border-gray-6 box-select" data-toggle="modal" data-target="#modal-help">
                                             <input class="chk" type="checkbox" id="checkbox-send1" name="chk-group1">
                                             <label for="checkbox-send1">
                                                 <i class="fas fa-check text-primary"></i>
@@ -195,7 +207,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4 mb-2">
-                                        <div class="text-center border border-gray-6 box-select">
+                                        <div class="text-center border border-gray-6 box-select" data-toggle="modal" data-target="#modal-help">
                                             <input class="chk" type="checkbox" id="checkbox-send2" name="chk-group1">
                                             <label for="checkbox-send2">
                                                 <i class="fas fa-check text-primary"></i>
@@ -212,7 +224,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4 mb-2">
-                                        <div class="text-center border border-gray-6 box-select">
+                                        <div class="text-center border border-gray-6 box-select" data-toggle="modal" data-target="#modal-help">
                                             <input class="chk" type="checkbox" id="checkbox-send3" name="chk-group1">
                                             <label for="checkbox-send3">
                                                 <i class="fas fa-check text-primary"></i>
@@ -310,6 +322,7 @@
                                     <div class="text-center text-danger">$29,800</div>
                                 </div>
                             </div>
+                            <hr class="my-2">
                             <div class="row align-items-center">
                                 <div class="col-lg-2 col-4 mb-3">
                                     <div class="text-center">
@@ -363,6 +376,23 @@
     <!-- module: global-footer -->
     <div id="global-footer"></div>
     <!-- module: ./global-footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-help" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title h5 text-black">說明標題</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- global -->
     <script src="assets/javascripts/vendor/popper.min.js"></script>

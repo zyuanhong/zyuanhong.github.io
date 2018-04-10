@@ -42,12 +42,12 @@
         <!-- ./module: global-header -->
     </header>
 
-    <div id="main" class="push bg-light py-10">
+    <div id="main" class="push bg-light py-lg-10 py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-9 col-xl-10 order-last">
                     <div class="shadow bg-white p-4">
-                        <div class="h5 text-black font-weight-bold mb-4">我的訂單</div>
+                        <div class="h5 text-black font-weight-bold mb-4">訂單編號</div>
                         <ul class="list-inline m-0">
                             <li class="list-inline-item">
                                 <a class="" href="">門號申辦資料填寫</a>
@@ -73,6 +73,9 @@
                                     <span class="mx-2">王大明</span>
                                     <span>訂單號: R12345678</span>
                                 </small>
+                                <div class="d-md-none">
+                                    <span class="badge badge-success badge-pill">目前狀態：完成付款</span>
+                                </div>
                             </div>
                             <div class="col">
                                 <small>付款金額</small>
@@ -81,11 +84,6 @@
                             <div class="col">
                                 <small>付款方式</small>
                                 <div class="text-black"><span class="lead">一次付清</span></div>
-                            </div>
-                            <div class="col">
-                                <a href="member-order-detail.html" class="btn btn-outline-primary btn-block py-2">
-                                    訂單詳情
-                                </a>
                             </div>
                             <div class="col-12">
                                 <div class="d-none d-md-block">
@@ -131,6 +129,7 @@
                                         <div class="text-center font-small">已送達</div>
                                     </div>
                                 </div>
+                                <hr class="my-2">
                                 <div class="row align-items-center">
                                     <div class="col-lg-2 col-4 mb-3">
                                         <div class="text-center">
