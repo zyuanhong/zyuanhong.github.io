@@ -253,8 +253,8 @@ select {
   color: #fff; }
 #section-main .custom-radio .custom-control-label::before {
   background: none; }
-#section-main .custom-radio .custom-control-input {
-  display: none; }
+#section-main .custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none; }
 #section-main .custom-radio .custom-control-input:checked ~ .custom-control-label {
   background-color: #1a6795;
   border-color: #1a6795;

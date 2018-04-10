@@ -58,61 +58,61 @@
                             </a>
                             <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
                             <hr class="my-2">
-                            <form class="" id="form-select">
+                            <form id="form-style">
                                 <div class="lead text-black">請選擇款式</div>
-                                <div class="form-group row mb-2 align-items-lg-center">
+                                <div class="form-group row mb-2 align-items-lg-center no-gutters">
                                     <label class="col-md-3 col-lg-2 col-form-label">選擇顏色</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-color-1" name="radio-colors" class="custom-control-input" required>
+                                            <input type="radio" id="radio-color-1" name="radioColors" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-color-1">香檳色</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-color-2" name="radio-colors" class="custom-control-input" required>
+                                            <input type="radio" id="radio-color-2" name="radioColors" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-color-2">紅色</label>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="form-group row mb-2 align-items-lg-center">
+                                <div class="form-group row mb-2 align-items-lg-center no-gutters">
                                     <label class="col-md-3 col-lg-2 col-form-label">申辦類別</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-type-1" name="radio-types" class="custom-control-input">
+                                            <input type="radio" id="radio-type-1" name="radioTypes" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-type-1">新辦</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-type-2" name="radio-types" class="custom-control-input">
+                                            <input type="radio" id="radio-type-2" name="radioTypes" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-type-2">續約</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group row mb-2 align-items-lg-center zone-telecom">
+                                <div class="form-group row mb-2 align-items-lg-center no-gutters">
                                     <label class="col-md-3 col-lg-2 col-form-label">電信業者</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-1" name="radio-telecoms" class="custom-control-input">
+                                            <input type="radio" id="radio-telecom-1" name="radioTelecoms" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-telecom-1">中華電信</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-2" name="radio-telecoms" class="custom-control-input">
+                                            <input type="radio" id="radio-telecom-2" name="radioTelecoms" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-telecom-2">遠傳電信</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-3" name="radio-telecoms" class="custom-control-input">
+                                            <input type="radio" id="radio-telecom-3" name="radioTelecoms" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-telecom-3">台灣大哥大</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-4" name="radio-telecoms" class="custom-control-input">
+                                            <input type="radio" id="radio-telecom-4" name="radioTelecoms" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-telecom-4">台灣之星</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline my-1">
-                                            <input type="radio" id="radio-telecom-5" name="radio-telecoms" class="custom-control-input">
+                                            <input type="radio" id="radio-telecom-5" name="radioTelecoms" class="custom-control-input" required>
                                             <label class="custom-control-label" for="radio-telecom-5">亞太電信</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group row mb-2 align-items-lg-center">
+                                <div class="form-group row mb-2 align-items-lg-center no-gutters">
                                     <label for="" class="col-md-3 col-lg-2 col-form-label">最低專案價</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="form-control-plaintext">
@@ -120,13 +120,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="alert alert-danger form-error mt-3 text-center" style="display: none;">
-                                    請完成款式選擇
-                                </div>
+<!--                                <input type="submit" name="submit" value="Submit">-->
                             </form>
+                            <div class="alert alert-danger text-center m-0 p-1 error" style="display: none;">
+                                <i class="fas fa-exclamation-triangle"></i> 請完成款式選擇
+                            </div>
+
+<!--
                             <a class="btn btn-lg btn-outline-primary btn-anchor px-6" href="#section-project">
                                 查看專案價格
                             </a>
+-->
                         </div>
                         <div class="col-md-5 mt-2 mt-md-0">
                             <div class="row slider-single">
@@ -1314,6 +1318,7 @@
     <div id="fb-root"></div>
 
     <!-- single -->
+    <script src="assets/javascripts/vendor/jquery.validate.min.js"></script>
     <script src="assets/javascripts/vendor/bootstrap.ekko-lightbox.min.js"></script>
     <script src="assets/javascripts/function/lightbox.js"></script>
     <script>
@@ -1323,8 +1328,36 @@
         var section4 = $('#section-acc');
         var section5 = $('#section-checkout');
 
-        $('#section-main .btn-anchor').click(function() {
-            section2.addClass("section-active").fadeIn();
+        jQuery.validator.setDefaults({
+            debug: true,
+            success: "valid"
+        });
+
+        $(function() {
+            $('#form-style').validate({
+                messages:{
+                    radioColors:{
+                        required:""
+                    },
+                    radioTypes:{
+                        required:""
+                    },
+                    radioTelecoms:{
+                        required:""
+                    }
+                },
+                submitHandler:function(form){
+                    section2.addClass("section-active").fadeIn();
+                    $('html, body').animate({scrollTop: section2.offset().top-100});
+                },
+                errorLabelContainer: $(".error")
+            });
+        });
+
+        $('#form-style input[type=radio]').on('click', function() {
+            $(this).closest("form").submit();
+//            section2.addClass("section-active").fadeIn();
+//            $('html, body').animate({scrollTop: section2.offset().top-100});
         });
         $('#section-project input:checkbox').click(function() {
             if($(this).is(":checked")) {
@@ -1354,10 +1387,6 @@
             });
             $(this).html( $(this).html() == '加入' ? '取消' :'加入' );
         });
-
-//        $('.zone-telecom input[type=radio]').on('change', function() {
-//            $(this).closest("form").submit();
-//        });
 
     </script>
 
