@@ -283,7 +283,17 @@ select {
   left: 0;
   right: 0;
   z-index: 1000; }
+#section-checkout.section-active {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
 
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; } }
 .title-pk .col {
   position: relative; }
 .title-pk .col .lead {
@@ -748,7 +758,7 @@ a.card:hover img {
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
   opacity: 0.25; }
 .slick-prev:before, .slick-next:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "FontAwesome";
   font-size: 1.875rem;
   line-height: 1;
   color: #000;
@@ -762,9 +772,9 @@ a.card:hover img {
   left: auto;
   right: 5px; }
 .slick-prev:before {
-  content: ""; }
+  content: ""; }
 [dir="rtl"] .slick-prev:before {
-  content: ""; }
+  content: ""; }
 
 .slick-next {
   right: 5px; }
@@ -772,9 +782,9 @@ a.card:hover img {
   left: 5px;
   right: auto; }
 .slick-next:before {
-  content: ""; }
+  content: ""; }
 [dir="rtl"] .slick-next:before {
-  content: ""; }
+  content: ""; }
 
 /* Dots */
 .slick-dots {

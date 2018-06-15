@@ -84,7 +84,7 @@
                             <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
                             <hr class="my-2">
                             <form id="form-style">
-                                <div class="lead text-black">請選擇款式</div>
+                                <div class="h4 text-black font-weight-bold">Step.1 請選擇款式</div>
                                 <div class="form-group row mb-2 align-items-lg-center no-gutters">
                                     <label class="col-md-3 col-lg-2 col-form-label">選擇顏色</label>
                                     <div class="col-md-9 col-lg-10">
@@ -141,14 +141,7 @@
                                     <label for="" class="col-md-3 col-lg-2 col-form-label">專案價格</label>
                                     <div class="col-md-9 col-lg-10">
                                         <div class="form-control-plaintext">
-                                            請先選擇款式
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row mb-2 align-items-lg-center no-gutters">
-                                    <label for="" class="col-md-3 col-lg-2 col-form-label">最低專案價</label>
-                                    <div class="col-md-9 col-lg-10">
-                                        <div class="form-control-plaintext">
+                                            $ <span class="text-danger lead">12,888</span> ~
                                             $ <span class="text-danger lead">12,888</span>
                                         </div>
                                     </div>
@@ -241,7 +234,7 @@
             <div class="section-step" id="section-project">
             <div class="mb-8">
                 <div class="title mb-2 text-center text-black">
-                    <div class="h5 title-line font-weight-bold"><span>選擇您的專案</span></div>
+                    <div class="h4 title-line font-weight-bold"><span>Step.2<br>選擇您的專案</span></div>
                 </div>
                 <div class="row slider-items-4">
                     <div class="col-6 col-md-3 my-2">
@@ -280,6 +273,9 @@
                                             </ul>
                                         </div>
                                         <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
+                                        <div class="text-center my-2">
+                                            <a class="btn btn-outline-primary px-6" href="">選擇</a>
+                                        </div>
                                     </div>
                                 </div>
                             </label>
@@ -321,6 +317,9 @@
                                             </ul>
                                         </div>
                                         <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
+                                        <div class="text-center my-2">
+                                            <a class="btn btn-outline-primary px-6" href="">選擇</a>
+                                        </div>
                                     </div>
                                 </div>
                             </label>
@@ -362,6 +361,9 @@
                                             </ul>
                                         </div>
                                         <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
+                                        <div class="text-center my-2">
+                                            <a class="btn btn-outline-primary px-6" href="">選擇</a>
+                                        </div>
                                     </div>
                                 </div>
                             </label>
@@ -403,6 +405,9 @@
                                             </ul>
                                         </div>
                                         <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
+                                        <div class="text-center my-2">
+                                            <a class="btn btn-outline-primary px-6" href="">選擇</a>
+                                        </div>
                                     </div>
                                 </div>
                             </label>
@@ -444,6 +449,9 @@
                                             </ul>
                                         </div>
                                         <a class="btn btn-sm btn-link btn-block" href="">詳細專案說明</a>
+                                        <div class="text-center my-2">
+                                            <a class="btn btn-outline-primary px-6" href="">選擇</a>
+                                        </div>
                                     </div>
                                 </div>
                             </label>
@@ -457,7 +465,7 @@
             <div class="section-step" id="section-prepay">
             <div class="mb-8">
                 <div class="title mb-2 text-center text-black">
-                    <div class="h5 title-line font-weight-bold"><span>選擇您的預繳資格</span></div>
+                    <div class="h4 title-line font-weight-bold"><span>Step.3<br>選擇您的預繳資格</span></div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-3 my-2">
@@ -465,8 +473,9 @@
                             <input class="chk" type="checkbox" id="checkbox31" name="chk-group3">
                             <label for="checkbox31">
                                 <i class="fas fa-check text-primary"></i>
-                                <div class="py-6">
+                                <div class="pt-6 pb-3">
                                     <div class="h5 text-black font-weight-bold">預繳：12,000</div>
+                                    <a class="btn btn-outline-primary mt-1 px-6" href="">選擇</a>
                                 </div>
                                 <div class="bg-gray-6 text-white text-row-2 d-flex">
                                     <div class="my-auto w-100  px-2 py-1">可抵月租費</div>
@@ -479,8 +488,9 @@
                             <input class="chk" type="checkbox" id="checkbox32" name="chk-group3">
                             <label for="checkbox32">
                                 <i class="fas fa-check text-primary"></i>
-                                <div class="py-6">
+                                <div class="pt-6 pb-3">
                                     <div class="h5 text-black font-weight-bold">免預繳</div>
+                                    <a class="btn btn-outline-primary mt-1 px-6" href="">選擇</a>
                                 </div>
                                 <div class="bg-gray-6 text-white text-row-2 d-flex">
                                     <div class="my-auto w-100  px-2 py-1">
@@ -1363,7 +1373,7 @@
                 },
                 submitHandler:function(form){
                     section2.addClass("section-active").fadeIn();
-                    $('html, body').animate({scrollTop: section2.offset().top-100});
+                    $('html, body').animate({scrollTop: section2.offset().top-100},1500);
                 },
                 errorLabelContainer: $(".error")
             });
@@ -1377,7 +1387,7 @@
         $('#section-project input:checkbox').click(function() {
             if($(this).is(":checked")) {
                 section3.addClass("section-active").fadeIn();
-                $('html, body').animate({scrollTop: section3.offset().top-100});
+                $('html, body').animate({scrollTop: section3.offset().top-100},1500);
             } else {
                 section3.fadeOut();
             }
@@ -1386,7 +1396,7 @@
             if($(this).is(":checked")) {
                 section4.addClass("section-active").fadeIn();
                 section5.addClass("section-active").fadeIn();
-                $('html, body').animate({scrollTop: section4.offset().top-100});
+                $('html, body').animate({scrollTop: section4.offset().top-100},1500);
             } else {
                 section4.fadeOut();
                 section5.fadeOut();
