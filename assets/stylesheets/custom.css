@@ -243,6 +243,9 @@ select {
   background-color: #1a6795; }
 .chk:checked + label .box-price-total {
   background-color: #fe8600; }
+.chk:checked + label .btn {
+  background-color: #1a6795;
+  color: #fff; }
 
 .box-select {
   position: relative; }
