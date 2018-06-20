@@ -81,6 +81,8 @@ p:only-child, p:last-child {
   left: 0; }
 .title .title-line:after {
   right: 0; }
+.title .h5 {
+  font-size: 1.5rem; }
 
 select {
   -webkit-appearance: none;
@@ -125,7 +127,7 @@ select {
 .nav-fixed {
   position: fixed;
   right: 1rem;
-  bottom: 4rem; }
+  bottom: 6rem; }
 
 .nav-justified .nav-link.active {
   background: #1a6795;
@@ -172,6 +174,9 @@ select {
   border-left: 0; }
 .bootstrap-touchspin .btn-down {
   border-right: 0; }
+
+#header .navbar-brand {
+  max-width: 50%; }
 
 #footer a {
   color: #dee2e6; }
