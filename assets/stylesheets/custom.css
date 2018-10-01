@@ -300,6 +300,11 @@ select {
     opacity: 0;
     bottom: 50%;
     transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); }
+  80% {
+    bottom: 60%; }
   100% {
     opacity: 1;
     bottom: 0; } }
