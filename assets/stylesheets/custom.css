@@ -582,6 +582,19 @@ a.card:hover img {
   50% {
     transform: scale(1);
     -webkit-transform: scale(1); } }
+.tab-content > .tab-pane, .pill-content > .pill-pane {
+  display: block;
+  /* undo display:none          */
+  padding: 0 !important;
+  height: 0;
+  /* height:0 is also invisible */ }
+
+.tab-content > .active, .pill-content > .active {
+  padding-top: 1rem !important;
+  height: auto;
+  /* let the content decide it  */ }
+
+/* bootstrap hack end */
 /*! Pushy - v1.1.0 - 2017-1-30
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
