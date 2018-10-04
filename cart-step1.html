@@ -164,7 +164,7 @@
                         </div>
 
                         <!-- 超值加購 -->
-                        <div class="">
+                        <div class="" id="section-acc">
                             <div class="title mb-2 text-center text-black">
                                 <div class="h5 title-line font-weight-bold"><span>超值加購</span></div>
                             </div>
@@ -426,6 +426,20 @@
     <script src="assets/javascripts/vendor/jquery.slick.min.js"></script>
     <script src="assets/javascripts/vendor/jquery.readmore.min.js"></script>
     <script src="assets/javascripts/custom.js"></script>
+
+    <!-- single -->
+    <script>
+        $('.btn-add').click(function (e) {
+            var id = ($(this).attr("id"));
+            $('.slider-items-5').find('.item').each(function(){
+                if($(this).hasClass(id)) {
+                    $(this).toggleClass('border border-primary');
+                }
+            });
+            $(this).html( $(this).html() == '加入' ? '取消' :'加入' );
+        });
+    </script>
+
     <div id="fb-root"></div>
 
     <!-- module include -->
