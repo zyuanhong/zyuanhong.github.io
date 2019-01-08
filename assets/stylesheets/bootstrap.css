@@ -27,7 +27,7 @@ body {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6c757d;
+  color: #343a40;
   text-align: left;
   background-color: #fff; }
 
@@ -2022,7 +2022,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.9375rem;
-  color: #6c757d;
+  color: #343a40;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3131,7 +3131,7 @@ tbody.collapse.show {
   text-decoration: none;
   background-color: #fafafa; }
 .list-group-item-action:active {
-  color: #6c757d;
+  color: #343a40;
   background-color: #e9ecef; }
 
 .list-group-item {
@@ -3579,7 +3579,7 @@ button.close {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #6c757d; }
+  color: #343a40; }
 
 .carousel {
   position: relative; }

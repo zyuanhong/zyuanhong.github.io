@@ -87,23 +87,20 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">手機號碼</label>
+                                    <label for="" class="col-sm-4 col-form-label">聯絡電話</label>
                                     <div class="col-sm-8">
                                         <input type="tel" class="form-control" id="" value="">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">城市</label>
+                                    <label for="" class="col-sm-4 col-form-label">地址</label>
                                     <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="" value="" required>
+<!--
                                         <select class="custom-select">
                                             <option>請選擇</option>
                                         </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">帳單地址</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="" value="" required>
+-->
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +114,7 @@
                                     <div class="col-12 col-lg-4 mb-3">
                                         <div class="custom-control custom-checkbox float-lg-right">
                                             <input type="checkbox" class="custom-control-input" id="customCheck-data2">
-                                            <label class="custom-control-label" for="customCheck-data2">同付款資料</label>
+                                            <label class="custom-control-label" for="customCheck-data2">同付款人資料</label>
                                         </div>
                                     </div>
                                 </div>
@@ -134,21 +131,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">手機號碼</label>
+                                    <label for="" class="col-sm-4 col-form-label">聯絡電話</label>
                                     <div class="col-sm-8">
                                         <input type="tel" class="form-control" id="" value="">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">城市</label>
-                                    <div class="col-sm-8">
-                                        <select class="custom-select">
-                                            <option>請選擇</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="" class="col-sm-4 col-form-label">帳單地址</label>
+                                    <label for="" class="col-sm-4 col-form-label">地址</label>
                                     <div class="col-sm-8">
                                         <input type="text" class="form-control" id="" value="">
                                     </div>
@@ -159,11 +148,11 @@
                             <div class="col-12 my-3">
                                 <div class="row justify-content-between">
                                     <div class="col-12 col-lg-8 mb-3">
-                                        <div class="h5 text-black font-weight-bold">申辦基本資訊</div>
+                                        <div class="h5 text-black font-weight-bold">申辦門號資料</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="" class="col-sm-3 col-form-label">攜碼號碼</label>
+                                    <label for="" class="col-sm-3 col-form-label">申辦號碼</label>
                                     <div class="col-sm-9">
                                         <input type="tel" class="form-control" id="" value="" required>
                                     </div>
@@ -202,13 +191,13 @@
                                             <label for="checkbox-send1">
                                                 <i class="fas fa-check text-primary"></i>
                                                 <div class="pt-6 pb-3">
-                                                    <div class="h5 text-black font-weight-bold">手機王到府服務</div>
+                                                    <div class="h5 text-black font-weight-bold">到府服務 - 效率配</div>
                                                     <div>費用：0</div>
                                                     <div class="btn btn-outline-primary mt-1 px-6">選擇</div>
                                                 </div>
                                                 <div class="bg-gray-6 text-white text-row-2 d-flex">
                                                     <div class="my-auto w-100  px-2 py-1">
-                                                    配送方式說明配送方式說明配送方式說明配送方式說明配送方式說明
+                                                    專人合約簽署、現場交機服務，服務時間約 10~15 分鐘
                                                     </div>
                                                 </div>
                                             </label>
@@ -253,7 +242,7 @@
                                 </div>
                                 <div class="form-inline">
                                     <div class="form-group">
-                                        預約時間
+                                        預約時段
                                     </div>
                                     <div class="form-group mx-3">
                                         <input type="date" class="form-control">
@@ -265,8 +254,8 @@
                                     </div>
                                 </div>
                                 <small class="form-text text-muted mt-2">
-                                    * 因備貨需提前作業，到府服務無法提供當日的預約，請見諒!<br>
-                                    * 溫馨小提醒：我們將立刻與您聯繫，實際到府時間依電話中確認時間為準，謝謝！
+                                    ※因合約、手機至少需一個工作天作業，最快可預約時間為下單日後天，請見諒！<br>
+                                    ※我們將以您預約的時間為主要安排，若因外務行程、訂單排序等因素，需調整服務時間，我們將另外約定您方便的時間。
                                 </small>
                             </div>
 
@@ -392,10 +381,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="modal-title h5 text-black">說明標題</div>
+                    <div class="modal-title h5 text-black">到府服務 - 效率配</div>
                 </div>
                 <div class="modal-body">
-                    <p>說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容說明內容</p>
+                    <ol class="pl-3">
+                        <li><strong>到府服務：</strong>不限定預約府上，可於指定超商、咖啡廳、速食店、辦公室、大樓接待處......等，專員可達地點皆可服務。</li>
+                        <li><strong>專人合約簽署：</strong>現場無提供合約解說，申辦前須於線上審視合約，有任何問題透過線上客服諮詢。</li>
+                        <li><strong>現場交機服務：</strong>基本拆封確認，無提供保貼代貼、資料備份/轉移服務。</li>
+                    </ol>
                     <div class="text-center">
                         <a class="btn btn-outline-primary" href="" data-dismiss="modal">選擇</a>
                     </div>

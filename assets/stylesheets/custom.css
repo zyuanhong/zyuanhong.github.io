@@ -787,6 +787,7 @@ a.card:hover img {
 .slick-prev:before, .slick-next:before {
   font-family: "FontAwesome";
   font-size: 1.875rem;
+  font-weight: 900;
   line-height: 1;
   color: #000;
   opacity: 0.75;
