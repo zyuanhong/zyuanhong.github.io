@@ -221,7 +221,8 @@ select {
     opacity: 1; } }
 .section-step {
   height: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow: hidden; }
 .section-step.section-active {
   animation: fadeIn .5s;
   height: auto;
@@ -587,7 +588,9 @@ a.card:hover img {
   /* undo display:none          */
   padding: 0 !important;
   height: 0;
-  /* height:0 is also invisible */ }
+  /* height:0 is also invisible */
+  overflow: hidden;
+  /* no-overflow                */ }
 
 .tab-content > .active, .pill-content > .active {
   padding-top: 1rem !important;
