@@ -8,6 +8,12 @@
 
 $(function(){
 
+    $('.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });
+
     $('.btn-top').click(function(){
 		$('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
