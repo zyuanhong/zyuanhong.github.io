@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ==========================================================================
    Mixin
    ========================================================================== */
@@ -808,9 +807,7 @@ a.card:hover img {
   left: auto;
   right: 5px; }
 .slick-prev:before {
-  content: ""; }
-[dir="rtl"] .slick-prev:before {
-  content: ""; }
+  content: "\f053"; }
 
 .slick-next {
   right: 5px; }
@@ -818,9 +815,7 @@ a.card:hover img {
   left: 5px;
   right: auto; }
 .slick-next:before {
-  content: ""; }
-[dir="rtl"] .slick-next:before {
-  content: ""; }
+  content: "\f054"; }
 
 /* Dots */
 .slick-dots {
