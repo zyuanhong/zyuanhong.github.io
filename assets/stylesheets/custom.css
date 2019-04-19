@@ -435,7 +435,8 @@ a.card:hover img {
   display: none; }
 [data-toggle="collapse"]:after {
   float: right;
-  font-family: FontAwesome; }
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900; }
 [data-toggle="collapse"][aria-expanded="true"]:after {
   content: '\f146'; }
 [data-toggle="collapse"][aria-expanded="false"]:after {
