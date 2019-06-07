@@ -862,6 +862,10 @@ a.card:hover img {
 .slider-kv .slick-prev, .slider-kv .slick-next, .slider-single .slick-prev, .slider-single .slick-next, .slider-items-4 .slick-prev, .slider-items-4 .slick-next {
   top: 50%;
   margin-top: -.5rem; }
+.slider-kv .slick-prev, .slider-single .slick-prev, .slider-items-4 .slick-prev {
+  left: 1.2rem; }
+.slider-kv .slick-next, .slider-single .slick-next, .slider-items-4 .slick-next {
+  right: 1.2rem; }
 
 .slider-kv .slick-prev:before, .slider-kv .slick-next:before {
   color: #fff; }
