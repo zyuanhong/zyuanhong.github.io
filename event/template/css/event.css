@@ -1,0 +1,33 @@
+.container, .container-fluid {
+  background-size: cover; }
+
+#kv {
+  background-color: #f2f2f2; }
+
+[class^="title-"], [class*="title-"] {
+  background-size: cover; }
+
+.title-faded {
+  background-image: url(../../../assets/images/event/title-faded.png); }
+
+.title-primary {
+  background-image: url(../../../assets/images/event/title-primary.png); }
+
+.title-success {
+  background-image: url(../../../assets/images/event/title-success.png); }
+
+.title-info {
+  background-image: url(../../../assets/images/event/title-info.png); }
+
+.title-warning {
+  background-image: url(../../../assets/images/event/title-warning.png); }
+
+.title-danger {
+  background-image: url(../../../assets/images/event/title-danger.png); }
+
+.badge {
+    max-width: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
