@@ -7,4 +7,5 @@
   min-height: 1.1rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: left; }
