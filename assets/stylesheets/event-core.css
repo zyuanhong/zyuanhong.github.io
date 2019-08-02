@@ -3,7 +3,6 @@
 
 .badge {
   display: block !important;
-  max-width: 8rem;
   min-height: 1.1rem;
   overflow: hidden;
   text-overflow: ellipsis;
