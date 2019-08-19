@@ -233,6 +233,7 @@ select {
   visibility: visible; }
 
 #section-acc .item.border {
+  border: 0 !important;
   background: rgba(26, 103, 149, 0.2); }
 
 .chk {
